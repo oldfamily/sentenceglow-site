@@ -27,11 +27,14 @@
 <ul>
   <li><strong>No personal information is collected or transmitted.</strong> Profile names and avatars exist only in the app's local database on your device.</li>
   <li><strong>No third-party services.</strong> The app contains no analytics SDKs, advertising SDKs, crash reporters, or tracking of any kind.</li>
-  <li><strong>No network access.</strong> All questions ship inside the app. The app functions fully offline.</li>
+  <li><strong>No network access.</strong> All questions ship inside the app. The mobile app functions fully offline and makes no network requests at all. The web version is downloaded from a web server like any website, and then runs entirely in your browser; it sends nothing back.</li>
   <li><strong>Parent mode PIN.</strong> The parent PIN is stored on-device as a salted cryptographic hash in the operating system's secure keychain. It is never transmitted anywhere.</li>
   <li><strong>Deleting data.</strong> Deleting a profile in parent mode permanently removes all of that child's data. Uninstalling the app removes everything.</li>
   <li><strong>Exports.</strong> Parent mode can export a backup file or a spreadsheet. Those files go only where you choose to send them through your device's share sheet; the app never sends them anywhere itself.</li>
 </ul>
+
+<h2>The web version</h2>
+<p>Sentenceglow also runs in a browser. It works the same way: progress is stored only in that browser on that device, there are no accounts, and the app sends nothing anywhere once it has loaded. Loading any website necessarily involves a request to a server, and the site is hosted on Cloudflare, which handles ordinary web-server information such as IP addresses in order to deliver the page. Nothing about your child's practice is part of that. Progress in the web version is separate from progress in the mobile app; there is no sync between them, because there is nowhere to sync to.</p>
 
 <h2>Children's privacy (COPPA)</h2>
 <p>Sentenceglow is designed for children and complies with the Children's Online Privacy Protection Act (COPPA) by design: because the app collects and transmits no data whatsoever, no child data is ever gathered, stored on servers, shared, or sold.</p>
